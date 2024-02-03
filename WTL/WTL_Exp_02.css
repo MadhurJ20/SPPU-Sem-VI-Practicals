@@ -1,0 +1,13 @@
+h2{
+ font-style: italic;
+}
+form{
+    margin-bottom: 2%;
+    padding: 2%;
+    background: antiquewhite;
+}
+#name{
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
