@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="WTL_Exp_03.xsl"?>
 <!--Design the XML document to store the information of the employees of any business-->
 <!--organization and demonstrate the use of:-->
 <!--a) DTD-->
 <!--b) XML Schema-->
 <!--And display the content in (e.g., tabular format) by using CSS/XSL.-->
-<!DOCTYPE employees SYSTEM "WTL_Exp_03.dtd">
+<!DOCTYPE employees SYSTEM "C:\Users\madhu\WebstormProjects\SPPU-Sem-VI-Practicals\WTL\WTL_Exp_03\WTL_Exp_03.dtd">
 <employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="WTL_Exp_03.xsd">
     <employee id="1">
         <name>Madhur Jaripatke</name>
@@ -12,8 +13,13 @@
         <department>Marketing</department>
     </employee>
     <employee id="2">
-        <name>Madhurz Jaripatke</name>
+        <name>Madhur Jaripatke</name>
         <position>Developer</position>
         <department>IT</department>
+    </employee>
+    <employee id="3">
+        <name>Madhur Jaripatke</name>
+        <position>Manager</position>
+        <department>HR</department>
     </employee>
 </employees>
