@@ -15,6 +15,7 @@ VI. Kruskal's Minimal Spanning Tree Algorithm
 VII. Dijkstra's Minimal Spanning Tree Algorithm
 '''
 
+
 def prim(adjacency_list):
     n = len(adjacency_list)
     visited = [False] * n
@@ -40,8 +41,9 @@ def prim(adjacency_list):
         mst_edges.append(min_edge)
         mst_weight += min_edge[2]
         visited[min_edge[1]] = True
-    print("MST Weight: ",mst_weight)
+    print("MST Weight: ", mst_weight)
     print("MST Edges:\n", mst_edges)
+
 
 adjacency_list = [
     {1: 2, 3: 6},
@@ -51,6 +53,5 @@ adjacency_list = [
     {1: 5, 2: 7, 3: 9}
 ]
 
-if __name__ == '__main__' :
+if __name__ == '__main__':
     prim(adjacency_list)
-

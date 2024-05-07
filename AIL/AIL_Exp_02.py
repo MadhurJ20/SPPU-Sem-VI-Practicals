@@ -8,11 +8,12 @@ RMDSSOE, Warje, Pune
 Implement A star Algorithm for any game search problem.
 '''
 
+
 def aStarAlgo(start_node, stop_node):
     open_set = set(start_node)
     closed_set = set()
-    g = {}               #store distance from starting node
-    parents = {}         # parents contains an adjacency map of all nodes
+    g = {}  #store distance from starting node
+    parents = {}  # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
     #start_node is root node i.e it has no parent nodes
@@ -49,7 +50,7 @@ def aStarAlgo(start_node, stop_node):
         if n == None:
             print('Path does not exist!')
             return None
-        
+
         # if the current node is the stop_node
         # then we begin reconstructin the path from it to the start_node
         if n == stop_node:
@@ -68,6 +69,7 @@ def aStarAlgo(start_node, stop_node):
     print('Path does not exist!')
     return None
 
+
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
@@ -75,6 +77,8 @@ def get_neighbors(v):
         return Graph_nodes[v]
     else:
         return None
+
+
 #for simplicity we ll consider heuristic distances given
 #and this function returns heuristic distance for all nodes
 def heuristic(n):
@@ -91,6 +95,7 @@ def heuristic(n):
         'J': 0
     }
     return H_dist[n]
+
 
 #Describe your graph here
 Graph_nodes = {
